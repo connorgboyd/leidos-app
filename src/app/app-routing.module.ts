@@ -6,6 +6,7 @@ import { GraphsComponent } from './graphs/graphs.component';
 import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'graphs', component: GraphsComponent },     
   { path: 'users', component: UsersComponent }
