@@ -1,0 +1,27 @@
+<body class="light-theme">
+
+  <div class="container_navbar">
+    <img id="logo" src="https://www.wvncc.edu/images/content/large_d41d8cd98f00b204e9800998e-56411.jpg">
+
+    <ul>
+      <li><a routerLink="/home" ariaCurrentWhenActive="page">Home</a></li>
+      <li><a routerLink="/graphs" ariaCurrentWhenActive="page">Graphs</a></li>
+      <li><a routerLink="/users" ariaCurrentWhenActive="page">Users</a></li>
+    </ul>
+
+    <div class="circle">
+      <div class="circle-bg"></div>
+      <i class="fas fa-user"></i>
+      <div class="dropdown-content">
+        <button class="settings-button">Logout</button>
+        <button class="settings-button" (click)="toggleDarkMode()">Theme Change</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="height: 56px"> </div>
+
+  <!-- Add your other page content here -->
+
+</body>
