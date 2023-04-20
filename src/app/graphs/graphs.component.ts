@@ -17,10 +17,10 @@ export class GraphsComponent implements AfterViewInit{
     animationEnabled: true,
     theme: 'light1', //"light2", "dark1", "dark2"
     title: {
-      text: 'Enery over Time',
+      text: 'Voltage over Time',
     },
     axisX: {
-      title: 'Time(Hours)',
+      title: 'Time(HH:MM)',
       reversed: false,
     },
     axisY: {
@@ -40,7 +40,7 @@ export class GraphsComponent implements AfterViewInit{
 
   ngAfterViewInit() {
     this.http
-      .get('/assets/sample.csv', {
+      .get('/assets/cvs_test1.csv', {
         responseType: 'text',
       })
       .subscribe((response: any) => {
@@ -48,8 +48,9 @@ export class GraphsComponent implements AfterViewInit{
         csvRowData.forEach((rowData: any, index: number) => {
           if (index === 0) return;
           var data = rowData.split(',');
-          this.dataPoints.push({ label: data[0], y: parseInt(data[1]) });
+          this.dataPoints.push({ label: data[1], y: parseFloat(data[2]) });
         });
+        this.dataPoints.pop();
         this.showChart = true;
       });
   }

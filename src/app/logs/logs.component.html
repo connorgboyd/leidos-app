@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class = "logs-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Voltage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let part of Table">
+                <td>{{part.date}}</td>
+                <td>{{part.time}}</td>
+                <td>{{part.voltage}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Average</th>
+                <th>Max</th>
+                <th>Min</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of Avg">
+                <td>{{data.average}}</td>
+                <td>{{data.max}}</td>
+                <td>{{data.min}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

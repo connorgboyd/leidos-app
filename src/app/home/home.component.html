@@ -1,1 +1,28 @@
 <app-navbar></app-navbar>
+<div class = "body-container">
+    <div class = "title">
+        PRT Capstone
+    </div>
+    <div class = "images">   
+        <img id = "prt" src = "https://wvutoday.wvu.edu/files/d/17166c18-7600-4703-94bb-27e868aff4ec/prt-generic-feature.jpg">
+        <img id = "cap" src = "https://www.centralcomputer.com/media/catalog/product/cache/6ebaea33771c22d8dcc36c8c09cbd633/o/r/ori-raspberry-pi-4-model-b-4go-2640.jpg">
+    </div>
+    <div class = "text-container">
+        <div class = "text-1">
+            Paving the way for future improvements on WVU's favorite mode of transportation!
+            This project’s purpose is to (hypothetically) record, process, and display the electrical power 
+            that the Personal Rapid Transport (PRT) system uses. This is the first of hopefully many similar projects at 
+            West Virginia University that will build upon each other and reach a point of consistent PRT monitoring that is easily available
+            on a simple user interface. For the scope of this first iteration, this lovely user interface was created to present some previously captured test bed data.
+            With options to view the data in both log and graph format, the user interface also has some work-in progress features such as profile features,
+            and viewing data by time-frame, that will be more useful when the project is built upon and is active on a wider scale.
+        </div>
+        <div class="text-2">
+            A modular Raspberry Pi 4 Model B microcontroller equipped with a sensor suited to measure the PRT's power is the basis of all
+            that is to come. In this first iteration, the focus was on a testbed that lays the foundation for this ultimate goal. A PWM ciruit
+            used in conjunction with an ADC on the RPi simulated the RPi collecting analog voltage data. Python programs on the RPi generated
+            this data through the PWM circuit, collected the data through the ADC, stored it in a .csv file, and analyzed the contents of that .csv file.
+            The results of this program were then saved as assets on the web-based user interface for viewing!
+        </div>
+    </div>
+</div>

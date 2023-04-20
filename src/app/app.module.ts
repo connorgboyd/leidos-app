@@ -9,6 +9,8 @@ import { GraphsComponent } from './graphs/graphs.component';
 import { UsersComponent } from './users/users.component';
 import * as CanvasJSAngularChart from '../assets/canvasjs.angular.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'
+import { LogsComponent } from './logs/logs.component';
 var CanvasJSChart = CanvasJSAngularChart.CanvasJSChart;
 
 @NgModule({
@@ -18,14 +20,16 @@ var CanvasJSChart = CanvasJSAngularChart.CanvasJSChart;
     HomeComponent,
     GraphsComponent,
     UsersComponent,
-    CanvasJSChart
+    CanvasJSChart,
+    LogsComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, LogsComponent]
 })
 export class AppModule { }

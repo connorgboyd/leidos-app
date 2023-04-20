@@ -1,0 +1,55 @@
+p {
+    font-family: Lato;
+  }
+
+table, th {
+  border: 1px solid black;
+  background-color: midnightblue;
+  border-collapse: collapse;
+  padding: 5px;
+  table-layout: fixed;
+  column-width: 5vw;
+  width: 30vw;
+  margin-left: 4.75vw;
+}
+
+th {
+  color:#f1f1f1;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+  border: 1px solid;
+}
+
+table tr:nth-child(even) {
+  background-color: #f1f1f1;
+  border: 1px solid;
+}
+
+td{
+  border: 1px solid;
+}
+
+#graph_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+  flex-direction: column;
+}
+
+#inputs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logs-container {
+  margin-top: 5vw;
+}
+
+.space {
+  margin-top: 20vw;
+}
